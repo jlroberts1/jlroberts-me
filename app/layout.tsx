@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     title: "James Roberts - Software Engineer",
     description:
       "Android Engineer Portfolio of James Roberts, specializing in mobile development and currently working at Tinybeans",
-  }
+  },
 };
 
 export default function RootLayout({

@@ -1,32 +1,17 @@
+import ProjectCard from "@/components/project-card";
 import { Button } from "@/components/ui/button";
 import { Download, Github, Linkedin, Mail, Twitter } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-
-interface SocialLinkProps {
-  href: string;
-  icon: React.ComponentType<{ className?: string }>;
-  label: string;
-}
-
-const SocialLink = ({ href, icon: Icon, label }: SocialLinkProps) => (
-  <a
-    href={href}
-    className="text-white/70 hover:text-white transition-colors"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    <Icon className="w-6 h-6" />
-    <span className="sr-only">{label}</span>
-  </a>
-);
+import projects from "@/app/data/project-cards";
+import { SocialLink } from "@/components/social-link";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-zinc-900 via-black to-zinc-900">
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]" />
-      <main className="relative container mx-auto px-4 min-h-screen">
-        <div className="flex flex-col lg:flex-row items-center justify-center min-h-screen gap-12 py-8">
+      <main className="relative container mx-auto min-h-screen">
+        <div className="flex flex-col px-4 lg:flex-row items-center justify-center min-h-screen gap-12 py-8">
           <div className="lg:w-2/3 space-y-8">
             <div className="space-y-4">
               <h1 className="text-4xl md:text-6xl font-bold text-white">
@@ -105,6 +90,20 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <div className="bg-gradient-to-br from-zinc-600 to-zinc-800 py-8">
+          <h2 className="text-2xl font-bold text-white ps-4 pb-8">Projects</h2>
+          <div className="grid sm:grid-cols-2 gap-8 grid-cols-1 px-8">
+            {projects.map((project) => (
+              <ProjectCard key={project.title} {...project} />
+            ))}
+          </div>
+        </div>
+        <footer
+          className="flex items-center justify-center gap-4 text-white/70 py-8"
+          style={{ borderTop: "1px solid rgba(255, 255, 255, 0.1)" }}
+        >
+          &#169; Contexts 2024
+        </footer>
       </main>
     </div>
   );
