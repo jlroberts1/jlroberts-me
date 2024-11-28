@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Download, Github, Linkedin, Mail, Twitter } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+
 interface SocialLinkProps {
   href: string;
   icon: React.ComponentType<{ className?: string }>;
@@ -66,9 +67,12 @@ export default function Home() {
                 size="lg"
                 variant="outline"
                 className="border-white/20 bg-slate-200 hover:bg-white/60 group"
+                asChild
               >
-                <Mail className="mr-2 h-4 w-4 group-hover:animate-pulse" />
-                Contact
+                <Link href="mailto:jlroberts1@pm.me">
+                  <Mail className="mr-2 h-4 w-4 group-hover:animate-pulse" />
+                  Contact
+                </Link>
               </Button>
             </div>
             <div className="flex gap-6">
