@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import projects from "@/app/data/project-cards";
 import { SocialLink } from "@/components/social-link";
+import { TechStack } from "@/components/tech-stack";
 
 export default function Home() {
   return (
@@ -98,6 +99,7 @@ export default function Home() {
             ))}
           </div>
         </div>
+        {/* <TechStack /> */}
         <footer
           className="flex items-center justify-center gap-4 text-white/70 py-8"
           style={{ borderTop: "1px solid rgba(255, 255, 255, 0.1)" }}
