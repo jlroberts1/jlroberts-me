@@ -5,7 +5,6 @@ import Image from "next/image";
 import Link from "next/link";
 import projects from "@/app/data/project-cards";
 import { SocialLink } from "@/components/social-link";
-import { TechStack } from "@/components/tech-stack";
 
 export default function Home() {
   return (
