@@ -19,11 +19,11 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "James Roberts - Software Engineer",
   description:
-    "Android Engineer Portfolio of James Roberts, specializing in mobile development and currently working at Tinybeans",
+    "Android Engineer Portfolio of James Roberts, specializing in mobile development and currently working at Corporate Tools",
   openGraph: {
     title: "James Roberts - Software Engineer",
     description:
-      "Android Engineer Portfolio of James Roberts, specializing in mobile development and currently working at Tinybeans",
+      "Android Engineer Portfolio of James Roberts, specializing in mobile development and currently working at Corporate Tools",
     url: "https://jlroberts.me",
     siteName: "James Roberts Portfolio",
     locale: "en_US",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "James Roberts - Software Engineer",
     description:
-      "Android Engineer Portfolio of James Roberts, specializing in mobile development and currently working at Tinybeans",
+      "Android Engineer Portfolio of James Roberts, specializing in mobile development and currently working at Corporate Tools",
   },
 };
 

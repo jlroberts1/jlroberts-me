@@ -24,8 +24,8 @@ export default function Home() {
               <p className="text-lg text-white/70 max-w-2xl">
                 I&apos;m an Ohio based{" "}
                 <span className="text-cyan-400">Android Engineer</span> at{" "}
-                <span className="text-violet-400">Tinybeans</span>, where I help
-                families turn their moments into memories.
+                <span className="text-violet-400">Corporate Tools</span>, where I help
+                to make business management easier with our global entity management software.
               </p>
 
               <p className="text-base text-white/60 max-w-2xl">
