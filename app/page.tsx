@@ -1,6 +1,6 @@
 import ProjectCard from "@/components/project-card";
 import { Button } from "@/components/ui/button";
-import { Download, Github, Linkedin, Mail, Twitter } from "lucide-react";
+import { Book, Download, Github, Linkedin, Mail, Twitter } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import projects from "@/app/data/project-cards";
@@ -46,6 +46,16 @@ export default function Home() {
                 <Link href="/assets/resume.pdf">
                   <Download className="mr-2 h-4 w-4 group-hover:animate-bounce" />
                   Resume
+                </Link>
+              </Button>
+              <Button
+                size="lg"
+                className="bg-gradient-to-r from-cyan-500 to-orange-500 hover:from-cyan-600 hover:to-orange-600 text-white group"
+                asChild
+              >
+                <Link href="https://fragmentedthoughts.jlroberts.me">
+                  <Book className="mr-2 h-4 w-4 group-hover:animate-bounce" />
+                  Blog
                 </Link>
               </Button>
               <Button
