@@ -43,7 +43,7 @@ export default function Home() {
                 className="bg-gradient-to-r from-violet-500 to-cyan-500 hover:from-violet-600 hover:to-cyan-600 text-white group"
                 asChild
               >
-                <Link href="/assets/resume.pdf">
+                <Link href="/resume">
                   <Download className="mr-2 h-4 w-4 group-hover:animate-bounce" />
                   Resume
                 </Link>

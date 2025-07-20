@@ -89,5 +89,6 @@ export default {
   plugins: [
 		daisyui,
     tailwindcssAnimate,
+		require("@tailwindcss/typography")
   ],
 } satisfies Config;
