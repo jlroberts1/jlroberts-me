@@ -1,29 +1,31 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import { IBM_Plex_Mono, IBM_Plex_Sans } from "next/font/google";
 import Script from "next/script";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
+const plexSans = IBM_Plex_Sans({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-plex-sans",
 });
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+const plexMono = IBM_Plex_Mono({
+  subsets: ["latin"],
+  weight: ["400", "500"],
+  variable: "--font-plex-mono",
 });
 
+const title = "James Roberts - Engineering Leader";
+const description =
+  "Engineering leader with 9+ years building software and experience managing engineering teams. Portfolio of James Roberts, currently at Corporate Tools.";
+
 export const metadata: Metadata = {
-  title: "James Roberts - Software Engineer",
-  description:
-    "Android Engineer Portfolio of James Roberts, specializing in mobile development and currently working at Corporate Tools",
+  title,
+  description,
   openGraph: {
-    title: "James Roberts - Software Engineer",
-    description:
-      "Android Engineer Portfolio of James Roberts, specializing in mobile development and currently working at Corporate Tools",
+    title,
+    description,
     url: "https://jlroberts.me",
     siteName: "James Roberts Portfolio",
     locale: "en_US",
@@ -35,9 +37,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "James Roberts - Software Engineer",
-    description:
-      "Android Engineer Portfolio of James Roberts, specializing in mobile development and currently working at Corporate Tools",
+    title,
+    description,
   },
 };
 
@@ -48,9 +49,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${plexSans.variable} ${plexMono.variable}`}>
         {children}
         <Analytics />
         <Script src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8991369567072554" />

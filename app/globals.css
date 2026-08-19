@@ -1,11 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@plugin "@tailwindcss/typography"
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
 
 @layer base {
   :root {
@@ -65,33 +60,19 @@ body {
 
 @layer base {
   * {
-    @apply border-border;
+    @apply border-line;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-surface font-sans text-ink antialiased;
   }
 }
 
-@layer utilities {
-  .animate-gradient {
-    animation: gradient 8s linear infinite;
+@media print {
+  @page {
+    margin: 16mm;
   }
-
-  .bg-300\% {
-    background-size: 300%;
-  }
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
+  body {
+    background: white;
   }
 }
-
 

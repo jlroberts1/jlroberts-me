@@ -1,13 +1,12 @@
 import { SocialLinkProps } from "@/app/types/social-link";
 
-export const SocialLink = ({ href, icon: Icon, label }: SocialLinkProps) => (
+export const SocialLink = ({ href, label }: SocialLinkProps) => (
   <a
     href={href}
-    className="text-white/70 hover:text-white transition-colors"
+    className="border-b border-transparent font-mono text-sm text-ink-subtle transition-colors hover:border-brand hover:text-brand"
     target="_blank"
     rel="noopener noreferrer"
   >
-    <Icon className="w-6 h-6" />
-    <span className="sr-only">{label}</span>
+    {label}
   </a>
 );

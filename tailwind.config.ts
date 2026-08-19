@@ -1,6 +1,5 @@
 import type { Config } from "tailwindcss";
 import tailwindcssAnimate from "tailwindcss-animate";
-import daisyui from "daisyui";
 
 export default {
     darkMode: ["class"],
@@ -11,7 +10,37 @@ export default {
   ],
   theme: {
   	extend: {
+  		fontFamily: {
+  			sans: ['var(--font-plex-sans)', 'Helvetica', 'Arial', 'sans-serif'],
+  			mono: ['var(--font-plex-mono)', 'ui-monospace', 'monospace']
+  		},
   		colors: {
+  			ink: {
+  				DEFAULT: 'oklch(18% 0.01 240 / <alpha-value>)',
+  				raised: 'oklch(30% 0.01 240 / <alpha-value>)',
+  				strong: 'oklch(28% 0.012 240 / <alpha-value>)',
+  				soft: 'oklch(35% 0.012 240 / <alpha-value>)',
+  				muted: 'oklch(40% 0.012 240 / <alpha-value>)',
+  				subtle: 'oklch(45% 0.012 240 / <alpha-value>)',
+  				faint: 'oklch(50% 0.012 240 / <alpha-value>)'
+  			},
+  			surface: {
+  				DEFAULT: 'oklch(98% 0.004 240 / <alpha-value>)',
+  				raised: 'oklch(99.5% 0.002 240 / <alpha-value>)',
+  				muted: 'oklch(94% 0.008 240 / <alpha-value>)'
+  			},
+  			line: {
+  				DEFAULT: 'oklch(89% 0.008 240 / <alpha-value>)',
+  				strong: 'oklch(85% 0.01 240 / <alpha-value>)',
+  				hover: 'oklch(70% 0.02 240 / <alpha-value>)',
+  				focus: 'oklch(60% 0.01 240 / <alpha-value>)'
+  			},
+  			brand: {
+  				DEFAULT: 'oklch(55% 0.16 235 / <alpha-value>)',
+  				strong: 'oklch(45% 0.16 235 / <alpha-value>)',
+  				deep: 'oklch(35% 0.1 235 / <alpha-value>)',
+  				tint: 'oklch(94% 0.03 235 / <alpha-value>)'
+  			},
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {
@@ -54,12 +83,8 @@ export default {
   			}
   		},
   		animation: {
-  			gradient: 'gradient 8s linear infinite',
   			'accordion-down': 'accordion-down 0.2s ease-out',
   			'accordion-up': 'accordion-up 0.2s ease-out'
-  		},
-  		backgroundSize: {
-  			'200%': '300%'
   		},
   		borderRadius: {
   			lg: 'var(--radius)',
@@ -87,7 +112,6 @@ export default {
   	}
   },
   plugins: [
-		daisyui,
     tailwindcssAnimate,
 		require("@tailwindcss/typography")
   ],
