@@ -27,6 +27,14 @@ const projects: ProjectCardProps[] = [
     link: "https://play.google.com/store/apps/details?id=com.pagerduty.android",
   },
   {
+    title: "Porthole",
+    description:
+      "A debug-only agent that lives inside a running Android app and answers questions about it: what recomposed and why, which frames dropped, and what is holding the main thread.",
+    emphasis: "Kotlin · Compose · MCP server · Apache-2.0",
+    image: "/projects/porthole.svg",
+    link: "https://github.com/gravityrepos/porthole",
+  },
+  {
     title: "Pip",
     description:
       "An all-in-one Discord bot covering moderation, XP and rank cards, games, tickets, and more, with a web dashboard for server admins.",
