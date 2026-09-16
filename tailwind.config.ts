@@ -8,6 +8,7 @@ export default {
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./lib/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
   	extend: {
@@ -81,6 +82,29 @@ export default {
   				'3': 'hsl(var(--chart-3))',
   				'4': 'hsl(var(--chart-4))',
   				'5': 'hsl(var(--chart-5))'
+  			}
+  		},
+  		typography: {
+  			DEFAULT: {
+  				css: {
+  					fontSize: '17px',
+  					'--tw-prose-body': 'oklch(35% 0.012 240)',
+  					'--tw-prose-headings': 'oklch(18% 0.01 240)',
+  					'--tw-prose-lead': 'oklch(40% 0.012 240)',
+  					'--tw-prose-links': 'oklch(55% 0.16 235)',
+  					'--tw-prose-bold': 'oklch(18% 0.01 240)',
+  					'--tw-prose-counters': 'oklch(50% 0.012 240)',
+  					'--tw-prose-bullets': 'oklch(70% 0.02 240)',
+  					'--tw-prose-hr': 'oklch(89% 0.008 240)',
+  					'--tw-prose-quotes': 'oklch(28% 0.012 240)',
+  					'--tw-prose-quote-borders': 'oklch(55% 0.16 235)',
+  					'--tw-prose-captions': 'oklch(50% 0.012 240)',
+  					'--tw-prose-code': 'oklch(18% 0.01 240)',
+  					'--tw-prose-pre-code': 'oklch(18% 0.01 240)',
+  					'--tw-prose-pre-bg': 'oklch(99.5% 0.002 240)',
+  					'--tw-prose-th-borders': 'oklch(85% 0.01 240)',
+  					'--tw-prose-td-borders': 'oklch(89% 0.008 240)'
+  				}
   			}
   		},
   		animation: {

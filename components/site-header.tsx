@@ -1,8 +1,9 @@
 import Link from "next/link";
 
 const navLinks = [
-  { href: "#about", label: "About" },
-  { href: "#projects", label: "Projects" },
+  { href: "/#about", label: "About" },
+  { href: "/#projects", label: "Projects" },
+  { href: "/blog", label: "Blog" },
   { href: "/resume", label: "Resume" },
 ];
 
@@ -10,7 +11,7 @@ export default function SiteHeader() {
   return (
     <header className="sticky top-0 z-10 flex items-center justify-between border-b border-line bg-surface/85 px-6 py-5 backdrop-blur-[8px] md:px-12">
       <Link
-        href="#top"
+        href="/"
         className="font-mono text-[15px] font-medium tracking-[-0.02em]"
       >
         James Roberts
