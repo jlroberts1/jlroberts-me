@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import MoonletLabsCard from "@/components/moonlet-labs-card";
 import ProjectCard from "@/components/project-card";
 import SiteHeader from "@/components/site-header";
 import { SocialLink } from "@/components/social-link";
@@ -102,6 +103,7 @@ export default function Home() {
         >
           <div className={`${eyebrow} mb-9`}>Projects</div>
           <div className="grid grid-cols-[repeat(auto-fill,minmax(min(320px,100%),1fr))] gap-6">
+            <MoonletLabsCard />
             {projects.map((project) => (
               <ProjectCard key={project.title} {...project} />
             ))}
