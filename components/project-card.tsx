@@ -6,9 +6,16 @@ export default function ProjectCard({
   emphasis,
   image,
   link,
+  linkLabel = "Learn more",
+  badge,
 }: ProjectCardProps) {
   return (
     <div className="flex flex-col gap-3.5 rounded-[10px] border border-line bg-surface-raised p-7 transition-colors hover:border-line-hover">
+      {badge && (
+        <span className="-mb-1 font-mono text-[12.5px] uppercase tracking-[0.06em] text-brand">
+          {badge}
+        </span>
+      )}
       <div className="flex items-center gap-3.5">
         {image ? (
           /* eslint-disable-next-line @next/next/no-img-element */
@@ -38,7 +45,7 @@ export default function ProjectCard({
           rel="noopener noreferrer"
           className="mt-1 self-start border-b border-ink text-sm font-medium transition-colors hover:border-brand hover:text-brand"
         >
-          Learn more &rarr;
+          {linkLabel} &rarr;
         </a>
       )}
     </div>

@@ -14,7 +14,7 @@ export default function MoonletLabsCard() {
       rel="noopener noreferrer"
       className="group col-span-full overflow-hidden rounded-[10px] border border-line bg-surface-raised transition-colors hover:border-line-hover"
     >
-      <div className="relative h-[260px] bg-[#13131a] md:h-[340px]">
+      <div className="relative h-[200px] bg-[#13131a] md:h-[240px]">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src="/projects/moonlet-labs-hero.webp"
@@ -38,7 +38,7 @@ export default function MoonletLabsCard() {
             MOONLET LABS
           </div>
           <h3
-            className={`${bricolage.className} text-[56px] font-bold leading-[0.82] tracking-[-0.05em] md:text-[104px]`}
+            className={`${bricolage.className} text-[48px] font-bold leading-[0.82] tracking-[-0.05em] md:text-[80px]`}
           >
             Moonlet{" "}
             <span className="text-[#a9a2ff]">
@@ -58,7 +58,7 @@ export default function MoonletLabsCard() {
           18 Android apps &amp; games · Kotlin · Compose
         </p>
         <span className="mt-1 self-start border-b border-ink text-sm font-medium transition-colors group-hover:border-brand group-hover:text-brand">
-          Learn more &rarr;
+          Explore Moonlet Labs &rarr;
         </span>
       </div>
     </a>

@@ -1,31 +1,30 @@
 import { ProjectCardProps } from "../types/project-card";
 
-const projects: ProjectCardProps[] = [
+export const professionalProjects: ProjectCardProps[] = [
   {
     title: "Corporate Tools",
-    description: "Corporate Tools was created to make starting, running, and organizing your business easier.",
-    emphasis: "10k+ downloads, 4.5★ on Google Play",
-    image: "https://cdn.brandfetch.io/corporatetools.com/w/200/h/200?c=1idXRAM8o31D1eCeimF",
-    link: "https://corporatetools.com"
-  },
-  {
-    title: "Tinybeans",
     description:
-      "Your Tinybeans private photo album keeps your family connected with all your child’s most special moments.",
-    emphasis: "500k+ downloads, 4.1★ on Google Play",
-    image:
-      "https://cdn.brandfetch.io/tinybeans.com/w/200/h/200?c=1idXRAM8o31D1eCeimF",
-    link: "https://play.google.com/store/apps/details?id=com.tinybeans",
+      "Senior Android developer since 2025. I help lead development of the business-management app, set mobile best practices, and coach and review the work of other engineers.",
+    emphasis: "10k+ downloads · 4.5★ on Google Play",
+    image: "https://cdn.brandfetch.io/corporatetools.com/w/200/h/200?c=1idXRAM8o31D1eCeimF",
+    link: "https://corporatetools.com",
+    linkLabel: "Visit Corporate Tools",
+    badge: "Current role",
   },
   {
     title: "PagerDuty",
     description:
-      "PagerDuty turns any signal into insight and action to improve agility and visibility across organizations.",
-    emphasis: "500k+ downloads, 4.5★ on Google Play",
+      "Android engineer on the incident-response app. I shipped features, led code reviews, fixed crashes to improve stability, and added automated tests to raise coverage.",
+    emphasis: "500k+ downloads · 4.5★ on Google Play",
     image:
       "https://cdn.brandfetch.io/pagerduty.com/w/200/h/200?c=1idXRAM8o31D1eCeimF",
     link: "https://play.google.com/store/apps/details?id=com.pagerduty.android",
+    linkLabel: "View Android app",
+    badge: "Previous role",
   },
+];
+
+export const independentProjects: ProjectCardProps[] = [
   {
     title: "Porthole",
     description:
@@ -33,6 +32,7 @@ const projects: ProjectCardProps[] = [
     emphasis: "Kotlin · Compose · MCP server · Apache-2.0",
     image: "/projects/porthole.svg",
     link: "https://github.com/gravityrepos/porthole",
+    linkLabel: "View on GitHub",
   },
   {
     title: "Pip",
@@ -41,7 +41,6 @@ const projects: ProjectCardProps[] = [
     emphasis: "TypeScript · discord.js · Next.js dashboard",
     image: "/projects/pip.png",
     link: "https://getpip.bot",
+    linkLabel: "Visit getpip.bot",
   },
 ];
-
-export default projects;
