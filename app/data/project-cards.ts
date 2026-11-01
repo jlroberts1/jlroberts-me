@@ -34,13 +34,4 @@ export const independentProjects: ProjectCardProps[] = [
     link: "https://github.com/gravityrepos/porthole",
     linkLabel: "View on GitHub",
   },
-  {
-    title: "Pip",
-    description:
-      "An all-in-one Discord bot covering moderation, XP and rank cards, games, tickets, and more, with a web dashboard for server admins.",
-    emphasis: "TypeScript · discord.js · Next.js dashboard",
-    image: "/projects/pip.png",
-    link: "https://getpip.bot",
-    linkLabel: "Visit getpip.bot",
-  },
 ];
