@@ -90,13 +90,12 @@ export default function Home() {
         >
           <div className={`${eyebrow} mb-4`}>About</div>
           <p className="max-w-[780px] text-[22px] leading-[1.65] text-ink-strong">
-            I came to engineering after years of leading teams — running
-            cross-functional store operations at CarMax before moving into
-            software full time. Since then I&apos;ve led Android rewrites that
-            moved a Play Store rating from 2.2 to over 4 stars, raised test
-            coverage from 0 to 45%, and set observability standards across a
-            mobile organization. What I enjoy most is coaching engineers, hiring
-            well, and building teams that ship reliably.
+            In software I&apos;ve led Android rewrites that moved a Play Store
+            rating from 2.2 to over 4 stars, raised test coverage from 0 to 45%,
+            and set observability standards across a mobile organization.
+            Running cross-functional store operations at CarMax taught me how to
+            hire, coach, and keep a team steady under pressure, and I bring that
+            to every engineering team I lead.
           </p>
         </section>
 
