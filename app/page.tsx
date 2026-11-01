@@ -10,7 +10,7 @@ import { role } from "@/app/data/resume";
 const socials = [
   { href: "https://github.com/jlroberts1", label: "GitHub" },
   { href: "https://linkedin.com/in/jlroberts1", label: "LinkedIn" },
-  { href: "https://twitter.com/xoomdev", label: "Twitter" },
+  { href: "https://x.com/codetheliar", label: "X" },
 ];
 
 const eyebrow =
