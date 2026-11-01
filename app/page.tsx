@@ -28,7 +28,7 @@ export default function Home() {
         <section className="flex flex-col-reverse items-center gap-12 py-16 lg:min-h-[calc(100vh-73px)] lg:flex-row lg:gap-[72px]">
           <div className="flex flex-col gap-7 lg:flex-[1.3]">
             <div className={eyebrow}>{role}</div>
-            <h1 className="text-[40px] font-bold leading-[1.05] tracking-[-0.03em] md:text-[60px]">
+            <h1 className="text-[40px] font-bold leading-[1.05] tracking-[-0.03em] md:text-[60px] xl:text-[72px]">
               Hi, I&apos;m James Roberts.
             </h1>
             <p className="max-w-[560px] text-[19px] leading-[1.6] text-ink-soft">
@@ -36,8 +36,9 @@ export default function Home() {
               <strong className="font-semibold text-ink">
                 engineering leader
               </strong>{" "}
-              with over 9 years building software and nearly two decades of
-              leading teams. Today I build Android at{" "}
+              who has led teams for nearly two decades: first in operations at
+              CarMax, and for the last 9 years in software. Today I build
+              Android at{" "}
               <strong className="font-semibold text-ink">Corporate Tools</strong>
               ; before that I managed mobile engineering at{" "}
               <strong className="font-semibold text-ink">Tinybeans</strong>.
@@ -68,14 +69,15 @@ export default function Home() {
           </div>
 
           <div className="flex justify-center lg:flex-1">
-            <div className="relative h-[260px] w-[260px] md:h-[300px] md:w-[300px]">
-              <div className="absolute -inset-[3px] rounded-full border border-line-strong" />
+            <div className="relative h-[260px] w-[260px] md:h-[300px] md:w-[300px] xl:h-[380px] xl:w-[380px]">
+              <div className="absolute -inset-6 rounded-full bg-brand/20 blur-2xl" />
+              <div className="absolute -inset-[3px] rounded-full border border-brand/40" />
               <Image
                 src="/headshot.jpg"
                 alt="James Roberts"
                 fill
                 priority
-                sizes="300px"
+                sizes="(min-width: 1280px) 380px, 300px"
                 className="rounded-full object-cover p-[10px]"
               />
             </div>
