@@ -43,12 +43,12 @@ const projects: ProjectCardProps[] = [
     link: "https://getpip.bot",
   },
   {
-    title: "Folieux",
+    title: "Failure Case",
     description:
-      "Dating and relationship tools for the ethical non-monogamy community, built around consent-gated connections as the data model's enforcement floor.",
-    emphasis: "Next.js · Drizzle · Supabase Postgres",
-    image: "/projects/folieux.png",
-    link: "https://folieux.com",
+      "A YouTube channel of postmortems for the real world: dams, bridges, power grids, and software outages, and why they failed.",
+    emphasis: "Production pipeline largely automated with Claude",
+    image: "/projects/failure-case.jpg",
+    link: "https://www.youtube.com/@FailureCase",
   },
 ];
 
