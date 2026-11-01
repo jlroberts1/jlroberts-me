@@ -42,14 +42,6 @@ const projects: ProjectCardProps[] = [
     image: "/projects/pip.png",
     link: "https://getpip.bot",
   },
-  {
-    title: "Failure Case",
-    description:
-      "Engineering postmortems on YouTube. Built on Slate, my Claude-driven production pipeline: research, fact-checked scripts, narration, Remotion renders, Shorts, thumbnails, and scheduled publishing, with human approval at every gate.",
-    emphasis: "Claude agents · Remotion · Cloudflare Workers",
-    image: "/projects/failure-case.jpg",
-    link: "https://www.youtube.com/@FailureCase",
-  },
 ];
 
 export default projects;
