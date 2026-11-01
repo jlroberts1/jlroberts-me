@@ -2,7 +2,7 @@ const trailerId = "Ou-2vRBYQpw";
 
 export default function FailureCaseCard() {
   return (
-    <div className="col-span-full overflow-hidden rounded-[10px] border border-line bg-surface-raised transition-colors hover:border-line-hover">
+    <div className="col-span-full overflow-hidden rounded-[10px] border border-line bg-surface-raised transition-colors hover:border-line-hover md:grid md:grid-cols-[3fr_2fr]">
       <div className="relative aspect-video bg-black">
         <iframe
           src={`https://www.youtube-nocookie.com/embed/${trailerId}?rel=0`}
@@ -13,7 +13,7 @@ export default function FailureCaseCard() {
           className="absolute inset-0 h-full w-full"
         />
       </div>
-      <div className="flex flex-col gap-3.5 p-7 md:p-9">
+      <div className="flex flex-col justify-center gap-3.5 p-7 md:p-8">
         <div className="flex items-center gap-3">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
@@ -23,7 +23,7 @@ export default function FailureCaseCard() {
           />
           <h3 className="text-xl font-semibold">Failure Case</h3>
         </div>
-        <p className="max-w-[720px] text-[16px] leading-relaxed text-ink-muted">
+        <p className="max-w-[720px] text-[15px] leading-relaxed text-ink-muted">
           Engineering postmortems on YouTube: dams, bridges, power grids, and
           software outages, and why they failed. Built on Slate, my
           Claude-driven production pipeline: research, fact-checked scripts,
