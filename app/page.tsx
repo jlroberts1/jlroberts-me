@@ -70,7 +70,7 @@ export default function Home() {
             <div className="relative h-[260px] w-[260px] md:h-[300px] md:w-[300px]">
               <div className="absolute -inset-[3px] rounded-full border border-line-strong" />
               <Image
-                src="/profilepic.jpg"
+                src="/headshot.jpg"
                 alt="James Roberts"
                 fill
                 priority
