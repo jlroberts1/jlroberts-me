@@ -45,8 +45,8 @@ const projects: ProjectCardProps[] = [
   {
     title: "Failure Case",
     description:
-      "A YouTube channel of postmortems for the real world: dams, bridges, power grids, and software outages, and why they failed.",
-    emphasis: "Production pipeline largely automated with Claude",
+      "Engineering postmortems on YouTube. Built on Slate, my Claude-driven production pipeline: research, fact-checked scripts, narration, Remotion renders, Shorts, thumbnails, and scheduled publishing, with human approval at every gate.",
+    emphasis: "Claude agents · Remotion · Cloudflare Workers",
     image: "/projects/failure-case.jpg",
     link: "https://www.youtube.com/@FailureCase",
   },
