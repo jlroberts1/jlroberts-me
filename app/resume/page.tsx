@@ -5,6 +5,7 @@ import {
   education,
   jobs,
   leadershipSkills,
+  projects,
   role,
   summary,
   techSkills,
@@ -91,6 +92,30 @@ export default function Resume() {
                     ))}
                   </ul>
                 )}
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section className="mb-10">
+          <h2 className={`${sectionHeading} mb-4`}>Independent Projects</h2>
+          <div className="flex flex-col gap-4">
+            {projects.map((project) => (
+              <div key={project.name} className="print:break-inside-avoid">
+                <h3 className="text-[15.5px] font-semibold">
+                  {project.name}{" "}
+                  <a
+                    href={`https://${project.url}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-mono text-[12.5px] font-normal text-ink-subtle transition-colors hover:text-brand"
+                  >
+                    | {project.url}
+                  </a>
+                </h3>
+                <p className="mt-1 text-[15px] leading-[1.6] text-ink-strong">
+                  {project.description}
+                </p>
               </div>
             ))}
           </div>

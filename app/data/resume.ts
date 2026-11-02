@@ -132,3 +132,24 @@ export const leadershipSkills = [
   "Delivery Planning",
   "Stakeholder Communication",
 ];
+
+export const projects = [
+  {
+    name: "Moonlet Labs",
+    url: "moonletlabs.com",
+    description:
+      "Independent Android studio. Designed, built, and shipped 18 utility apps and logic puzzle games solo on Google Play with Kotlin and Jetpack Compose.",
+  },
+  {
+    name: "Porthole",
+    url: "github.com/gravityrepos/porthole",
+    description:
+      "Open-source, debug-only agent that runs inside an Android app and reports what recomposed and why, which frames dropped, and what is blocking the main thread. Kotlin, Compose, MCP.",
+  },
+  {
+    name: "Failure Case",
+    url: "youtube.com/@FailureCase",
+    description:
+      "YouTube channel of engineering postmortems, produced with Slate, a Claude-driven pipeline that automates research, fact-checked scripts, narration, Remotion renders, and scheduled publishing.",
+  },
+];
